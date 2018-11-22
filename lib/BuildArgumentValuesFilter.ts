@@ -1,4 +1,4 @@
-import {Helper} from "../gota-core/index";
+import {Helper} from "@gota/core";
 import {ServerFilter} from "./ServerFilter";
 import {FileWrapper} from "./FileWrapper"
 

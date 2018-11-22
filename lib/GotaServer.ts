@@ -2,7 +2,7 @@ import { Server } from "http";
 import  * as http from "http";
 
 import * as fs from "fs";
-import {Helper} from "../gota-core/index";
+import {Helper} from "@gota/core";
 import {ServerFilter} from "./ServerFilter";
 import {ServerFilterContainer} from "./ServerFilterContainer";
 import {ServerFilterWrapper} from "./ServerFilterWrapper";
