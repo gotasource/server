@@ -70,7 +70,7 @@ var writeFile = function (path, buffer, permission) {
         fs.closeSync(fileDescriptor);
     }
 }
-*/
+
 
 
 class TestFilter implements ServerFilter{
@@ -86,7 +86,7 @@ class TestFilter2 implements ServerFilter{
         await next();
     }
 }
-
+*/
 class Executor{
     context:any;
     method: Function;
@@ -160,8 +160,8 @@ export class GotaServer{
         this.addFilter(new BuildRequestBodyFilter());
         this.addFilter(new BuildArgumentValuesFilter());
         //
-        this.addFilter(new TestFilter());
-        this.addFilter(new TestFilter2());
+        //this.addFilter(new TestFilter());
+        //this.addFilter(new TestFilter2());
 
         this.server = http.createServer((request: any/*#<http.IncomingMessage>*/, response: any/*#<http.ServerResponse>*/) => {
             // console.log('URL:', request.url);
@@ -177,7 +177,7 @@ export class GotaServer{
 
             request.serverContext = this;
 
-            let buffer = new Buffer([]);
+            let buffer = Buffer.from('');
             //
             request.on('data', chunk => {
                 buffer= Buffer.concat([buffer,chunk]);

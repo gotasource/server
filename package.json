@@ -1,6 +1,6 @@
 {
   "name": "@gota/server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     "typescript": "^2.5.2"
   },
   "dependencies": {
-    "@gota/core": "0.0.7",
+    "@gota/core": "latest",
     "http": "0.0.0",
     "reflect-metadata": "^0.1.12",
     "url": "^0.11.0"
