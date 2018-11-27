@@ -82,7 +82,7 @@ class TestFilter implements ServerFilter{
 
 class TestFilter2 implements ServerFilter{
     async doFilter(request: any, response: any, next: Function){
-        console.log('test2222        test2222          test22222');
+        console.log('TestFilter2');
         await next();
     }
 }
