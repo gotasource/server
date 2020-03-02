@@ -1,6 +1,6 @@
 {
   "name": "@gota/server",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,13 +13,13 @@
   "author": "caohonghiep",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^9.6.39",
-    "typescript": "^2.5.2"
+    "@types/node": "^9.6.55",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "@gota/core": "latest",
     "http": "0.0.0",
-    "reflect-metadata": "^0.1.12",
+    "reflect-metadata": "^0.1.13",
     "url": "^0.11.0"
   }
 }
