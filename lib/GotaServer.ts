@@ -189,7 +189,7 @@ export class GotaServer{
                 (request as any).path =  request.url.substring(0, request.url.indexOf('?') > -1 ? request.url.indexOf('?') : undefined);
                 // build pathParameters and find serviceExecutor in executorContainer
                 let executorInformation = this.executorContainer.findExecutorInformation( (request as any).path, request.method);
-                if (!!executorInformation || !!executorInformation.executor) {
+                if (!executorInformation || !executorInformation.executor) {
                     response.statusCode = 404;
                     response.setHeader('Content-Type', 'text/plain');
                     response.end('Not Found\n');
