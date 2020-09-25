@@ -197,7 +197,12 @@ export class GotaServer{
                 }
                 (request as any).executorInformation = executorInformation;
                 await this.serverFilterContainer.executeFilters(request, response);
-                response.end( (response as any).result);
+                if(!!(response as any).result){
+                    response.end((response as any).result);
+                }else {
+                    response.end('');
+                }
+
             });
 
         });
